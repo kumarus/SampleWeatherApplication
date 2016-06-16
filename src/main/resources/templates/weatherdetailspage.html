@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Sample Weather Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<h1>Current weather in your city</h1>  
+    <p th:text="'City: ' + ${weatherresponse.city}" />
+    <p th:text="'Todays date: ' + ${weatherresponse.todate}" />
+    <p th:text="'Weather Description: ' + ${weatherresponse.weatherDescription}" />
+    <p th:text="'Temperature In Fahrenheit: ' + ${weatherresponse.temperatureInFahrenheit}" />
+    <p th:text="'Temperature In Celsius: ' + ${weatherresponse.temperatureInCelsius}" />
+    <p th:text="'Sunrise: ' + ${weatherresponse.sunrise}" />
+    <p th:text="'Sunset: ' + ${weatherresponse.sunset}" />
+    
+   
+    <a href="/weather">Click here to check another city weather</a>
+</body>
+</html>

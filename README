@@ -1,0 +1,25 @@
+
+# How to use:
+
+This is a maven project, can run using ..
+
+mvn test -> to execute the Junit tests.
+
+mvn package -> to generate the executable jar.
+
+To run the program just run:
+
+java -jar target/sampleweatherapplication-0.1.0.jar
+
+or From IDE
+===========
+mvn install
+
+Run this class as a java application > com.sample.weather.web.config.Application  it will starts spring boot 
+environment which is having inbuilt tomcat server.
+
+browser request to:
+http://localhost:8080/weather
+ 
+
+
